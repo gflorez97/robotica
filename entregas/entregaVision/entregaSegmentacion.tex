@@ -1,0 +1,105 @@
+%Tablas hechas con la herramienta http://www.tablesgenerator.com/# cambiando l para p{8cm} para hacer el salto de linea
+\documentclass{article}
+
+\usepackage{titlesec}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{ amssymb }
+%\usepackage{subfig}
+\usepackage{subcaption}
+%\usepackage{breqn}
+\usepackage{mathtools,bm}
+\usepackage{eurosym}
+\usepackage{amstext} % for \text
+\DeclareRobustCommand{\officialeuro}{%
+  \ifmmode\expandafter\text\fi
+  {\fontencoding{U}\fontfamily{eurosym}\selectfont e}}
+\usepackage[spanish]{babel} %changes the LaTex default labels to spanish
+\usepackage{float} %enables the anchorage of the figures and tables within the text, with [H]
+\usepackage{longtable}
+
+\usepackage[a4paper,bindingoffset=0.2in,%
+            left=1in,right=1in,top=1in,bottom=1in,%
+            footskip=.25in]{geometry}
+% \graphicspath{ {images/}, {images2/} }
+\usepackage{amsmath}
+\usepackage[hyphens]{url}
+\usepackage{hyperref}
+\usepackage{multirow}
+
+
+%\setcounter{secnumdepth}{4}
+
+\titleformat{\paragraph}
+{\normalfont\normalsize\bfseries}{\theparagraph}{1em}{}
+\titlespacing*{\paragraph}
+{0pt}{3.25ex plus 1ex minus .2ex}{1.5ex plus .2ex}
+
+\newcommand*{\frontPageEC}[2]{
+    \begingroup % Create the command for including the title page in the document
+        \centering % Center all text
+        \vspace*{\baselineskip} % White space at the top of the page
+        {\begin{flushright} \LARGE #1  \end{flushright}}
+        \vspace*{\baselineskip}
+        \rule{\textwidth}{1.6pt}\vspace*{-\baselineskip}\vspace*{2pt} % Thick horizontal line
+        \rule{\textwidth}{0.4pt}\\[\baselineskip] % Thin horizontal line
+        {\LARGE #2  \\[0.8\baselineskip] \large{Robótica y Percepción Computacional}}\\[0.2\baselineskip] % Title
+        \rule{\textwidth}{0.4pt}\vspace*{-\baselineskip}\vspace{3.2pt} % Thin horizontal line
+        \rule{\textwidth}{1.6pt}\\[\baselineskip] % Thick horizontal line
+        \vspace*{2\baselineskip} % Whitespace between location/year and editors
+        Alumnos: \\[\baselineskip]
+        {\Large Luciano García Giordano (150245)} \\
+        {\Large Gonzalo Flórez Arias (150048)} \\
+        {\Large Salvador González Gerpe (150044)} \\
+        
+        \vfill
+        %\includegraphics[scale=0.4]{UPM.png}
+        
+        {\itshape Universidad Politécnica de Madrid \\ ETSI Informáticos\par} % Editor affiliation
+    \endgroup}
+
+\title{Entrega de segmentación}
+\author{Luciano García Giordano, Gonzalo Flórez Arias, Salvador González Gerpe}
+\date{19/03/2019}
+\date{Universidad Politécnica de Madrid}
+\begin{document}
+
+\frontPageEC{19 de marzo de 2019}{Entrega 02: Segmentación}
+\thispagestyle{empty}
+
+\newpage
+\tableofcontents
+\setcounter{page}{1}
+
+\clearpage
+\newpage
+
+
+
+\section{Solución propuesta}
+
+\subsection{Entrenamiento}
+
+\subsection{Algoritmo de segmentación}
+
+
+\section{Explicación del código}
+
+
+\section{Ejemplos ejecutados}
+
+
+\section{Tiempos de ejecución}
+
+
+\section{Conclusiones}
+
+
+\begin{thebibliography}{1}
+
+   
+\end{thebibliography}
+
+
+
+\end{document}
